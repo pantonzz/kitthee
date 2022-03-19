@@ -3,16 +3,17 @@ public class conversiontemperatureswitchcase {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         System.out.print("ต้องการเเปลงเป็น (C กด 1/F กด 2 ) =");
-        int choice = kb.nextInt();
+        String choice = kb.nextLine();
+        System.out.print(choice);
 
         switch (choice){
-            case 1:
+            case "C":
                 System.out.print("ป้อนอุณหภูมิ(เซลเซียส) =");
                 float c= kb.nextFloat();
                 float f=(c*9/5)+32;
                 System.out.println(c+"เซลเซียส "+f+"ฟาเรนไฮต");
                 break;
-            case 2:
+            case "F":
                 System.out.print("ป้อนอุณหภูมิ(ฟาเรนไฮต) =");
                 float faren= kb.nextFloat();
                 float cel=(faren-32)*5/9;
